@@ -2,9 +2,9 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 import Seo from "../components/seo"
-import Main from "../layouts/main"
+import Main from "../layouts/Main/main"
 
-const SecondPage = () => (
+const Skills = () => (
   <Main>
     <Seo title="Page two" />
     <h1>Hi from the second page</h1>
@@ -13,4 +13,4 @@ const SecondPage = () => (
   </Main>
 )
 
-export default SecondPage
+export default Skills
