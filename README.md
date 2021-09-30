@@ -10,7 +10,7 @@
 
 Esto es un proyecto personal basado en Garsby.
 Su finalidad es aprender Gatsby y dejar un site operativo donde presentar un curriculum actualizado
-Si quieres utilizar este proyecto para tu propio aprendizaje o utilización esta a tu disposición
+Si quieres utilizar este proyecto para tu propio aprendizaje o su utilización esta a tu disposición
 
 ## 🚀 Quick start
 
