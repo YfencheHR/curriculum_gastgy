@@ -1,11 +1,12 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import Menu from "../Menu"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, colorTheme }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: colorTheme.background,
       marginBottom: `1.45rem`,
     }}
   >
@@ -27,6 +28,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Menu colorTheme={ colorTheme } />
     </div>
   </header>
 )
