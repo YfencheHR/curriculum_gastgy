@@ -1,12 +1,12 @@
 import * as React from "react"
 import { Container } from "react-bootstrap"
 import { Link } from "gatsby"
-
+import "./menu.scss"
 
 const Menu = () => (
   <>
     <Container>
-      <ul>
+      <ul className={'menu'}>
         <li>
           <Link to={'/'} >Inicio</Link>
         </li>
@@ -14,7 +14,7 @@ const Menu = () => (
           <Link to={'/skills'} >Skills</Link>
         </li>
         <li>
-          <Link to={'/clients'} >Clientes</Link>
+          <Link to={'/projects'} >Proyectos</Link>
         </li>
         <li>
           <Link to={'/using-typescript'} >Ejemplo TS</Link>

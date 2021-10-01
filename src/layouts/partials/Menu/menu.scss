@@ -1,0 +1,19 @@
+.menu {
+  display: flex;;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  li {
+    padding: 30px 20px;
+    font-weight: bold;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: aqua;
+
+      }
+    }
+  }
+}
