@@ -4,6 +4,12 @@ module.exports = {
     description: ``,
     author: `@YfencheHR`,
     siteUrl: `https://yfcode.es/`,
+    siteThemeDefault: {
+      color: '#000',
+      color_body: '#bbb',
+      background: '#ccc',
+      background_body: '#000',
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -11,23 +11,31 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../partials/Header/header"
 import Footer from "../partials/Footer/footer"
-import Menu from "../partials/Menu/menu"
 
-const Main = ({ children }) => {
+const Main = ({ children, colorTheme }) => {
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
+          title 
+          siteThemeDefault {
+            color
+            color_body
+            background
+            background_body
+          }
         }
       }
     }
   `)
 
+  colorTheme = colorTheme !== undefined ? colorTheme : data.site.siteMetadata.siteThemeDefault;
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Menu />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`}  colorTheme={colorTheme}/>
+
       <div
         style={{
           margin: `0 auto`,
@@ -36,7 +44,7 @@ const Main = ({ children }) => {
         }}
       >
         <main>{children}</main>
-      <Footer />
+      <Footer colorTheme={colorTheme || data.site.siteThemeDefault} />
       </div>
     </>
   )

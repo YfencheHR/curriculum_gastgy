@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Seo from "../components/seo"
 import Main from "../layouts/Main/main"
 
-const Clients = () => (
+const Projects = () => (
   <Main>
     <Seo title="" />
     <h1>Hi from the second page</h1>
@@ -13,4 +13,4 @@ const Clients = () => (
   </Main>
 )
 
-export default Clients
+export default Projects
